@@ -6,12 +6,59 @@
     <title>font</title>
     <link rel="stylesheet" href="src/output.css" />
   </head>
-  <body>
-    <div class="flex h-screen justify-center items-center flex-col">
-      <p>This uses the custom font</p>
-      <p class="font-[font1]">This uses the custom font1</p>
-      <p class="font-[font]">This uses the custom font2</p>
-      <p class="">This uses the custom font</p>
+  <body class="">
+    <div
+      class="flex flex-col h-[220dvh] md:h-[120dvh] 2xl:h-screen bg-contain bg-[url(/Assets/background/bg1.jpg)]"
+    >
+      <!-- Header -->
+      <div class="my-15 text-center text-white">
+        <h1 class="text-4xl font-bold">
+          Everything you need to run your books.
+        </h1>
+        <p class="text-lg mt-2 opacity-75">
+          Well everything you need if you aren’t that picky about minor details
+          like tax compliance.
+        </p>
+      </div>
+
+      <!-- content -->
+      <div
+        class="flex flex-col text-white mb-2 md:flex-row ml-0 md:ml-[10vw] lg:ml-[19vw] h-[calc(100dvh-(24.6px+60px+60px))]"
+      >
+        <div class="flex flex-col gap-3 flex-1 my-10">
+          <div class="hover:bg-white/10 rounded-lg p-3 hover:shadow-md">
+            <h2 class="text-lg font-semibold">Payroll</h2>
+            <p class="text-sm opacity-75 pr-5">
+              Keep track of everyone’s salaries and whether or not they’ve been
+              paid. Direct deposit not supported.
+            </p>
+          </div>
+          <div class="hover:bg-white/10 rounded-lg p-3 hover:shadow-md">
+            <h2 class="text-lg font-semibold">Claim expenses</h2>
+            <p class="text-sm opacity-75 pr-5">
+              All of your receipts organized into one place, as long as you
+              don’t mind typing in the data by hand.
+            </p>
+          </div>
+          <div class="hover:bg-white/10 rounded-lg p-3 hover:shadow-md">
+            <h2 class="text-lg font-semibold">VAT handling</h2>
+            <p class="text-sm opacity-75 pr-5">
+              We only sell our software to companies who don’t deal with VAT at
+              all, so technically we do all the VAT stuff they need.
+            </p>
+          </div>
+          <div class="hover:bg-white/10 rounded-lg p-3 hover:shadow-md">
+            <h2 class="text-lg font-semibold">Reporting</h2>
+            <p class="text-sm opacity-75 pr-5">
+              Easily export your data into an Excel spreadsheet where you can do
+              whatever the hell you want with it.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex-1/4 bg-cover bg-[url(/Assets/images/payroll-2nd-page.png)]"
+        ></div>
+      </div>
     </div>
   </body>
 </html>
