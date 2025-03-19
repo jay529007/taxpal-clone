@@ -26,28 +26,42 @@
         class="flex flex-col text-white mb-2 md:flex-row ml-0 md:ml-[10vw] lg:ml-[19vw] h-[calc(100dvh-(24.6px+60px+60px))]"
       >
         <div class="flex flex-col gap-3 flex-1 my-10">
-          <div class="hover:bg-white/10 rounded-lg p-3 hover:shadow-md">
+          <!-- 1 -->
+          <div
+            onclick="displayImage('payroll.png')"
+            class="hover:bg-white/10 cursor-pointer rounded-lg p-3 hover:shadow-md"
+          >
             <h2 class="text-lg font-semibold">Payroll</h2>
             <p class="text-sm opacity-75 pr-5">
               Keep track of everyone’s salaries and whether or not they’ve been
               paid. Direct deposit not supported.
             </p>
           </div>
-          <div class="hover:bg-white/10 rounded-lg p-3 hover:shadow-md">
+          <!-- 2 -->
+          <div
+            onclick="displayImage('expenses.png')"
+            class="hover:bg-white/10 rounded-lg p-3 hover:shadow-md"
+          >
             <h2 class="text-lg font-semibold">Claim expenses</h2>
             <p class="text-sm opacity-75 pr-5">
               All of your receipts organized into one place, as long as you
               don’t mind typing in the data by hand.
             </p>
           </div>
-          <div class="hover:bg-white/10 rounded-lg p-3 hover:shadow-md">
+          <!-- 3 -->
+          <div
+            onclick="displayImage('vatreturns.png')"
+            class="hover:bg-white/10 rounded-lg p-3 hover:shadow-md"
+          >
             <h2 class="text-lg font-semibold">VAT handling</h2>
             <p class="text-sm opacity-75 pr-5">
               We only sell our software to companies who don’t deal with VAT at
               all, so technically we do all the VAT stuff they need.
             </p>
           </div>
-          <div class="hover:bg-white/10 rounded-lg p-3 hover:shadow-md">
+          <!-- 4 -->
+          <div onclick="displayImage('contacts.png')" 
+          class="hover:bg-white/10 rounded-lg p-3 hover:shadow-md">
             <h2 class="text-lg font-semibold">Reporting</h2>
             <p class="text-sm opacity-75 pr-5">
               Easily export your data into an Excel spreadsheet where you can do
@@ -56,9 +70,11 @@
           </div>
         </div>
         <div
-          class="flex-1/4 bg-cover bg-[url(/Assets/images/payroll-2nd-page.png)]"
+          id="image-container"
+          class="flex-1/4 overflow-y-scroll object-cover "
         ></div>
       </div>
     </div>
+    <script src="test2.js"></script>
   </body>
 </html>

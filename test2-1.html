@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Image on Click</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col justify-center items-center min-h-screen bg-gray-100">
+
+<!-- Main div to display the image -->
+<div id="image-container" 
+     class="w-96 h-64 bg-cover bg-center rounded-lg shadow-lg border-2 border-gray-300 mb-8">
+  <!-- Initially empty or add a placeholder image -->
+</div>
+
+<!-- Button divs -->
+<div class="flex gap-4">
+  <div class="w-32 h-32 bg-blue-500 text-white flex justify-center items-center cursor-pointer hover:scale-105 transition"
+       onclick="displayImage('image1.png')">
+    Image 1
+  </div>
+
+  <div class="w-32 h-32 bg-green-500 text-white flex justify-center items-center cursor-pointer hover:scale-105 transition"
+       onclick="displayImage('image2.png')">
+    Image 2
+  </div>
+
+  <div class="w-32 h-32 bg-red-500 text-white flex justify-center items-center cursor-pointer hover:scale-105 transition"
+       onclick="displayImage('inventory.png')">
+    Image 3
+  </div>
+
+  <div class="w-32 h-32 bg-yellow-500 text-white flex justify-center items-center cursor-pointer hover:scale-105 transition"
+       onclick="displayImage('payroll.png')">
+    Image 4
+  </div>
+</div>
+
+<script>
+  function displayImage(imageName) {
+    const imageContainer = document.getElementById('image-container');
+    imageContainer.style.backgroundImage = `url('/Assets/images/${imageName}')`;
+  }
+</script>
+
+</body>
+</html>
