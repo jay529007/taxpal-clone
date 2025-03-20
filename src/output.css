@@ -396,6 +396,9 @@
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
+  .mx-3 {
+    margin-inline: calc(var(--spacing) * 3);
+  }
   .mx-10 {
     margin-inline: calc(var(--spacing) * 10);
   }
@@ -479,6 +482,9 @@
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-15 {
+    margin-bottom: calc(var(--spacing) * 15);
   }
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
@@ -597,6 +603,9 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
@@ -612,11 +621,17 @@
   .h-\[100\%\] {
     height: 100%;
   }
+  .h-\[110vh\] {
+    height: 110vh;
+  }
   .h-\[120vh\] {
     height: 120vh;
   }
   .h-\[130vh\] {
     height: 130vh;
+  }
+  .h-\[140vh\] {
+    height: 140vh;
   }
   .h-\[150dvh\] {
     height: 150dvh;
@@ -624,11 +639,32 @@
   .h-\[150vh\] {
     height: 150vh;
   }
+  .h-\[160vg\] {
+    height: 160vg;
+  }
+  .h-\[160vh\] {
+    height: 160vh;
+  }
   .h-\[200vh\] {
     height: 200vh;
   }
   .h-\[220dvh\] {
     height: 220dvh;
+  }
+  .h-\[230dvh\] {
+    height: 230dvh;
+  }
+  .h-\[240dvh\] {
+    height: 240dvh;
+  }
+  .h-\[260vh\] {
+    height: 260vh;
+  }
+  .h-\[290vh\] {
+    height: 290vh;
+  }
+  .h-\[300vh\] {
+    height: 300vh;
   }
   .h-\[calc\(100vh-\(100px\)\)\] {
     height: calc(100vh - (100px));
@@ -704,6 +740,9 @@
   }
   .flex-1 {
     flex: 1;
+  }
+  .flex-1\/2 {
+    flex: calc(1/2 * 100%);
   }
   .flex-1\/3 {
     flex: calc(1/3 * 100%);
@@ -1756,6 +1795,15 @@
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-15 {
+    padding-bottom: calc(var(--spacing) * 15);
+  }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
   }
@@ -2107,8 +2155,17 @@
   .scheme-only-light {
     color-scheme: only light;
   }
+  .opacity-5 {
+    opacity: 5%;
+  }
+  .opacity-10 {
+    opacity: 10%;
+  }
   .opacity-15 {
     opacity: 15%;
+  }
+  .opacity-20 {
+    opacity: 20%;
   }
   .opacity-30 {
     opacity: 30%;
@@ -2643,6 +2700,11 @@
       display: none;
     }
   }
+  .sm\:h-\[90\%\] {
+    @media (width >= 40rem) {
+      height: 90%;
+    }
+  }
   .sm\:h-\[95vh\] {
     @media (width >= 40rem) {
       height: 95vh;
@@ -2661,6 +2723,11 @@
   .sm\:h-\[130vh\] {
     @media (width >= 40rem) {
       height: 130vh;
+    }
+  }
+  .sm\:h-\[140vh\] {
+    @media (width >= 40rem) {
+      height: 140vh;
     }
   }
   .sm\:h-auto {
@@ -2688,6 +2755,11 @@
       padding-inline: calc(var(--spacing) * 20);
     }
   }
+  .md\:mx-0 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 0);
+    }
+  }
   .md\:mx-10 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 10);
@@ -2708,6 +2780,11 @@
       height: 1;
     }
   }
+  .md\:h-\[13vh\] {
+    @media (width >= 48rem) {
+      height: 13vh;
+    }
+  }
   .md\:h-\[40dvh\] {
     @media (width >= 48rem) {
       height: 40dvh;
@@ -2723,9 +2800,29 @@
       height: 120vh;
     }
   }
+  .md\:h-\[130vh\] {
+    @media (width >= 48rem) {
+      height: 130vh;
+    }
+  }
+  .md\:h-\[135vh\] {
+    @media (width >= 48rem) {
+      height: 135vh;
+    }
+  }
+  .md\:h-\[140vh\] {
+    @media (width >= 48rem) {
+      height: 140vh;
+    }
+  }
   .md\:h-\[150dvh\] {
     @media (width >= 48rem) {
       height: 150dvh;
+    }
+  }
+  .md\:h-\[240dvh\] {
+    @media (width >= 48rem) {
+      height: 240dvh;
     }
   }
   .md\:h-auto {
@@ -2776,6 +2873,11 @@
   .lg\:h-\[110dvh\] {
     @media (width >= 64rem) {
       height: 110dvh;
+    }
+  }
+  .lg\:h-\[110vh\] {
+    @media (width >= 64rem) {
+      height: 110vh;
     }
   }
   .lg\:h-\[120vh\] {
@@ -2853,6 +2955,11 @@
       margin-left: 15vw;
     }
   }
+  .xl\:h-\[130vh\] {
+    @media (width >= 80rem) {
+      height: 130vh;
+    }
+  }
   .xl\:h-\[155dvh\] {
     @media (width >= 80rem) {
       height: 155dvh;
@@ -2861,6 +2968,11 @@
   .xl\:h-auto {
     @media (width >= 80rem) {
       height: auto;
+    }
+  }
+  .xl\:h-screen {
+    @media (width >= 80rem) {
+      height: 100vh;
     }
   }
   .xl\:gap-20 {
@@ -2906,6 +3018,11 @@
   .\32 xl\:h-\[110dvh\] {
     @media (width >= 96rem) {
       height: 110dvh;
+    }
+  }
+  .\32 xl\:h-\[110vh\] {
+    @media (width >= 96rem) {
+      height: 110vh;
     }
   }
   .\32 xl\:h-auto {
