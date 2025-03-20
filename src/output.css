@@ -612,6 +612,9 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
+  .h-\[0vh\] {
+    height: 0vh;
+  }
   .h-\[60dvh\] {
     height: 60dvh;
   }
@@ -1797,6 +1800,9 @@
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-7 {
+    padding-bottom: calc(var(--spacing) * 7);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
