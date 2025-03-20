@@ -3,7 +3,8 @@
     "@tailwindcss/cli": "^4.0.14",
     "tailwindcss": "^4.0.14"
   },
-  "scripts": {
-  "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify --allow-root"
+ "scripts": {
+  "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify --allow-root",
+  "postinstall": "chmod +x node_modules/.bin/tailwindcss"
 }
 }
