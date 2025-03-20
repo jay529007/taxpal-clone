@@ -1,4 +1,7 @@
 {
+
+  "name": "taxpal-clone",
+  "version": "1.0.0",           
   "dependencies": {
     "@tailwindcss/cli": "^4.0.14",
     "tailwindcss": "^4.0.14"
