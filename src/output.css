@@ -1121,6 +1121,12 @@
   .gap-9 {
     gap: calc(var(--spacing) * 9);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
   .space-y-1 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -1400,6 +1406,9 @@
   }
   .border-gray-500 {
     border-color: var(--color-gray-500);
+  }
+  .border-white {
+    border-color: var(--color-white);
   }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
@@ -1740,6 +1749,12 @@
   }
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
@@ -2688,9 +2703,19 @@
       display: block;
     }
   }
+  .md\:h-\[1\] {
+    @media (width >= 48rem) {
+      height: 1;
+    }
+  }
   .md\:h-\[40dvh\] {
     @media (width >= 48rem) {
       height: 40dvh;
+    }
+  }
+  .md\:h-\[110vh\] {
+    @media (width >= 48rem) {
+      height: 110vh;
     }
   }
   .md\:h-\[120vh\] {
@@ -2743,6 +2768,16 @@
       margin-inline: calc(var(--spacing) * 40);
     }
   }
+  .lg\:h-\[1\] {
+    @media (width >= 64rem) {
+      height: 1;
+    }
+  }
+  .lg\:h-\[110dvh\] {
+    @media (width >= 64rem) {
+      height: 110dvh;
+    }
+  }
   .lg\:h-\[120vh\] {
     @media (width >= 64rem) {
       height: 120vh;
@@ -2751,6 +2786,11 @@
   .lg\:h-\[130dvh\] {
     @media (width >= 64rem) {
       height: 130dvh;
+    }
+  }
+  .lg\:h-\[130vh\] {
+    @media (width >= 64rem) {
+      height: 130vh;
     }
   }
   .lg\:h-\[140vh\] {
@@ -2823,9 +2863,19 @@
       height: auto;
     }
   }
+  .xl\:gap-20 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 20);
+    }
+  }
   .xl\:px-50 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 50);
+    }
+  }
+  .xl\:px-66 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 66);
     }
   }
   .xl\:px-120 {
@@ -2841,6 +2891,11 @@
   .\32 xl\:ml-\[13vw\] {
     @media (width >= 96rem) {
       margin-left: 13vw;
+    }
+  }
+  .\32 xl\:ml-\[23vw\] {
+    @media (width >= 96rem) {
+      margin-left: 23vw;
     }
   }
   .\32 xl\:h-\[90vh\] {
@@ -2861,6 +2916,11 @@
   .\32 xl\:h-screen {
     @media (width >= 96rem) {
       height: 100vh;
+    }
+  }
+  .\32 xl\:gap-20 {
+    @media (width >= 96rem) {
+      gap: calc(var(--spacing) * 20);
     }
   }
   .\32 xl\:px-0 {
