@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "font1";
+    src: url("/Assets/Texts/c9a5bc6a7c948fb0-s.p(1).woff2") format("woff2");
+  }
