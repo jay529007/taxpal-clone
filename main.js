@@ -7,7 +7,7 @@ window.onload = () => {
 
 function displayImage(imageName) {
   const imageContainer = document.getElementById("image-container");
-  imageContainer.style.backgroundImage = `url('/Assets/images/${imageName}')`;
+  imageContainer.style.backgroundImage = `url('/images/${imageName}')`;
   // imageContainer.style.backgroundSize = "cover"; 
   imageContainer.style.backgroundSize = "contain"; 
   imageContainer.style.backgroundPosition = "Center"; 
