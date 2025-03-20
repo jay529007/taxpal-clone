@@ -2863,14 +2863,64 @@
       height: 100vh;
     }
   }
+  .\32 xl\:px-0 {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .\32 xl\:px-20 {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .\32 xl\:px-40 {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 40);
+    }
+  }
+  .\32 xl\:px-80 {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 80);
+    }
+  }
+  .\32 xl\:px-100 {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 100);
+    }
+  }
+  .\32 xl\:px-130 {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 130);
+    }
+  }
   .\32 xl\:px-140 {
     @media (width >= 96rem) {
       padding-inline: calc(var(--spacing) * 140);
     }
   }
+  .\32 xl\:py-10 {
+    @media (width >= 96rem) {
+      padding-block: calc(var(--spacing) * 10);
+    }
+  }
   .\32 xl\:py-20 {
     @media (width >= 96rem) {
       padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .\32 xl\:py-30 {
+    @media (width >= 96rem) {
+      padding-block: calc(var(--spacing) * 30);
+    }
+  }
+  .\32 xl\:py-40 {
+    @media (width >= 96rem) {
+      padding-block: calc(var(--spacing) * 40);
+    }
+  }
+  .\32 xl\:py-50 {
+    @media (width >= 96rem) {
+      padding-block: calc(var(--spacing) * 50);
     }
   }
 }
