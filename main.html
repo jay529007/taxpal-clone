@@ -7,26 +7,86 @@
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body class="">
+    <!-- navbar-p -->
+    <div
+      class="menu-p bg-slate-200 hidden sm:hidden fixed p-5 h-screen w-screen z-50"
+    >
+      <!-- X button -->
+      <div
+        onclick="hideSidebar()"
+        class="mb-5 border border-gray-400 rounded-2xl w-fit bg-stone-50"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="m12 12.727l-3.244 3.252q-.161.16-.358.15t-.358-.17t-.16-.363t.16-.363L11.274 12L8.04 8.782q-.16-.161-.16-.367t.16-.368t.364-.16q.204 0 .363.16L12 11.298l3.219-3.252q.161-.16.358-.16t.358.16q.165.166.165.367t-.165.36L12.702 12l3.252 3.244q.16.161.16.358t-.16.358q-.166.165-.367.165t-.36-.165z"
+          />
+        </svg>
+      </div>
+      <!-- signin button -->
+      <div
+        class="flex justify-between border border-stone-300 bg-stone-100 p-3 rounded-2xl mb-20 items-center"
+      >
+        <div
+          href="#"
+          class="font-semibold bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-4xl"
+        >
+          Get started
+        </div>
+        <a
+          href="#"
+          class="!text-gray-600 rounded-2xl border border-gray-500 p-2 hover:text-blue-500"
+          >Sign in</a
+        >
+      </div>
+      <div class="flex flex-col items-center justify-center gap-20">
+        <a href="#" class="!text-black">Features</a>
+        <a href="#" class="!text-black">Testimonials</a>
+        <a href="#" class="!text-black">Pricing</a>
+      </div>
+    </div>
     <!-- page-1 -->
     <div
-      class="h-[130vh] sm:h-auto flex flex-col border sm:px-10 lg:px-20 xl:px-50"
+      class="h-auto mb-5 sm:mb-0 sm:h-auto flex flex-col sm:px-10 lg:px-20 xl:px-50"
     >
+      <!-- navbar-p -->
+      <div class="pt-2 px-7 flex justify-between items-center sm:hidden">
+        <div>
+          <button
+            onclick="showSidebar()"
+            class="bg-blue-300 block hover:bg-blue-600 sm:hidden px-4 py-2 rounded-lg"
+            type="button"
+          >
+            ☰
+          </button>
+        </div>
+
+        <!-- logo -->
+        <div class="flex items-center">
+          <div class="w-8">
+            <img class="object-cover" src="Assets/Icons/logo.png" alt="" />
+          </div>
+          <span class="ml-2 text-sm font-semibold"
+            >Tax<span class="text-blue-500">Pal</span></span
+          >
+        </div>
+      </div>
+
       <!-- navbar -->
-      <div class="flex items-center sm:gap-0 sm:mt-2 p-4">
-        <button
-          class="bg-blue-300 block hover:bg-blue-600 sm:hidden mr-15 p-3 rounded-lg"
-          type="button"
-        >
-          ☰
-        </button>
+      <div class="hidden sm:flex items-center sm:gap-0 sm:mt-2 p-4">
         <!-- logo -->
         <div
-          class="flex md:flex-row ml-7 justify-center sm:ml-0 flex-col items-center"
+          class="hidden sm:flex sm:flex-row ml-7 justify-center sm:ml-0 flex-col items-center"
         >
           <div class="w-8">
             <img class="object-cover" src="Assets/Icons/logo.png" alt="" />
           </div>
-          <span class="ml-2 text-xl font-[font1] font-semibold"
+          <span class="ml-2 text-sm font-semibold"
             >Tax<span class="text-blue-500">Pal</span></span
           >
         </div>
@@ -72,13 +132,13 @@
         </p>
         <div class="mt-8 flex justify-center space-x-4">
           <button
-            class="bg-gray-800 hover:bg-black font-bold text-white rounded-4xl px-6 py-3"
+            class="bg-gray-800 hover:bg-black sm:font-bold text-white rounded-4xl p-2.5 sm:px-6 sm:py-3"
             type="button"
           >
             Get 6 months free
           </button>
           <button
-            class="flex items-center hover:bg-blue-600 hover:text-white px-6 py-3 border rounded-4xl"
+            class="flex items-center hover:bg-blue-600 hover:text-white p-2.5 sm:px-6 sm:py-3 border rounded-4xl"
             type="button"
           >
             ▶️ <span class="ml-2">Watch video</span>
@@ -87,17 +147,17 @@
       </div>
 
       <!-- logos section -->
-      <div class="">
+      <div class="px-3 sm:px-0">
         <!-- text -->
         <div class="text-center text-black 2xl:mt-3 mt-4">
           Trusted by these six companies so far
         </div>
         <!-- logs -->
         <div
-          class="flex flex-wrap justify-center font-[font1] items-center space-x-8"
+          class="flex flex-wrap justify-center font-[font1] items-center space-x-5 sm:space-x-8"
         >
           <!-- transistor -->
-          <div class="flex items-center gap-1">
+          <div class="flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -137,11 +197,6 @@
           </div>
           <!-- statickit -->
           <div class="flex items-center">
-            <!-- <img
-              src="/Assets/Icons/statickit.svg"
-              alt="StaticKit"
-              class="h-10 fill-black"
-            /> -->
             <svg
               version="1.0"
               xmlns="http://www.w3.org/2000/svg"
@@ -217,71 +272,77 @@
 
     <!-- page-2 -->
     <div
-      class="flex flex-col h-[200vh] xl:gap-20 md:h-[130vh] bg-cover bg-[url(/Assets/background/bg1.jpg)]"
+      class="my-[2%] mt-0 p-[2%]  sm:pb-[7%] sm:p-0 h-auto text-white bg-cover bg-[url(/Assets/background/bg1.jpg)]"
     >
-      <!-- hero section -->
-      <div class="mt-20 px-4 text-center text-white">
-        <h1 class="text-4xl font-semibold">
-          Everything you need to run your books.
-        </h1>
-        <p class="text-sm mt-5 opacity-75">
-          Well everything you need if you aren’t that picky about minor details
-          like tax compliance.
-        </p>
-      </div>
-
-      <!-- contant -->
-      <div
-        class="flex md:flex-row flex-col h-[200vh] lg:h-auto 2xl:h-screen text-white mt-6 mb-2 m-0 2xl:ml-[13vw] xl:ml-[15vw]"
-      >
-        <div class="flex flex-col justify-center gap-3 flex-1">
-          <!-- 1 -->
-          <div
-            onclick="displayImage('payroll.png')"
-            class="hover:bg-white/10 rounded-lg pl-4 py-5 p-3"
-          >
-            <h2 class="text-lg font-semibold">Payroll</h2>
-            <p class="text-sm opacity-75 pr-3">
-              Keep track of everyone’s salaries and whether or not they’ve been
-              paid. Direct deposit not supported.
-            </p>
-          </div>
-          <!-- 2 -->
-          <div
-            onclick="displayImage('expenses.png')"
-            class="hover:bg-white/10 rounded-lg pl-4 py-5 p-3"
-          >
-            <h2 class="text-lg font-semibold">Claim expenses</h2>
-            <p class="text-sm opacity-75 pr-3">
-              All of your receipts organized into one place, as long as you
-              don’t mind typing in the data by hand.
-            </p>
-          </div>
-          <!-- 3 -->
-          <div
-            onclick="displayImage('vatreturns.png')"
-            class="hover:bg-white/10 rounded-lg pl-4 py-5 p-3"
-          >
-            <h2 class="text-lg font-semibold">VAT handling</h2>
-            <p class="text-sm opacity-75 pr-3">
-              We only sell our software to companies who don’t deal with VAT at
-              all, so technically we do all the VAT stuff they need.
-            </p>
-          </div>
-          <!-- 4 -->
-          <div
-            onclick="displayImage('contacts.png')"
-            class="hover:bg-white/10 rounded-lg pl-4 py-5 p-3"
-          >
-            <h2 class="text-lg font-semibold">Reporting</h2>
-            <p class="text-sm opacity-75 pr-3">
-              Easily export your data into an Excel spreadsheet where you can do
-              whatever the hell you want with it.
-            </p>
-          </div>
+      <!-- hero -->
+    <div class="text-center py-[5%] mb-[1%]">
+      <h1 class="text-4xl font-semibold">
+        Everything you need to run your books.
+      </h1>
+      <p class="text-sm mt-5 opacity-75">
+        Well everything you need if you aren’t that picky about minor details
+        like tax compliance.
+      </p>
+    </div>
+    <!-- main -->
+    <div
+      class="flex flex-col sm:flex-row sm:ml-[1%] xl:ml-[20%] h-[140dvh] sm:h-[100dvh]"
+    >
+      <!-- 1 -->
+      <div class="flex-1 py-0 sm:flex sm:flex-col sm:justify-center">
+        <!-- payroll -->
+        <div
+          onclick="displayImage('payroll.png')"
+          class="hover:bg-white/10  rounded-lg sm:rounded-none sm:rounded-l-lg pl-3.5 pr-3 py-4.5"
+        >
+          <h2 class="text-lg pb-2 font-semibold">Payroll</h2>
+          <p class="text-sm opacity-75">
+            Keep track of everyone’s salaries and whether or not they’ve been
+            paid. Direct deposit not supported.
+          </p>
         </div>
-        <div id="image-container" class="flex-1/3"></div>
+
+        <!-- Claim expenses -->
+        <div
+          onclick="displayImage('expenses.png')"
+          class="hover:bg-white/10 rounded-lg sm:rounded-none sm:rounded-l-lg pl-3.5 pr-3 py-4.5"
+        >
+          <h2 class="text-lg pb-2 font-semibold">Claim expenses</h2>
+          <p class="text-sm opacity-75">
+            All of your receipts organized into one place, as long as you don’t
+            mind typing in the data by hand.
+          </p>
+        </div>
+
+        <!-- VAT handling -->
+        <div
+          onclick="displayImage('vatreturns.png')"
+          class="hover:bg-white/10 rounded-lg sm:rounded-none sm:rounded-l-lg pl-3.5 pr-3 py-4.5"
+        >
+          <h2 class="text-lg pb-2 font-semibold">VAT handling</h2>
+          <p class="text-sm opacity-75">
+            We only sell our software to companies who don’t deal with VAT at
+            all, so technically we do all the VAT stuff they need.
+          </p>
+        </div>
+
+        <!-- Reporting -->
+        <div
+          onclick="displayImage('contacts.png')"
+          class="hover:bg-white/10 rounded-lg sm:rounded-none sm:rounded-l-lg pl-3.5 pr-3 py-4.5"
+        >
+          <h2 class="text-lg pb-2 font-semibold">Reporting</h2>
+          <p class="text-sm opacity-75">
+            Easily export your data into an Excel spreadsheet where you can do
+              whatever the hell you want with it.
+          </p>
+        </div>
       </div>
+      <div
+        id="image-container"
+        class="flex-1 rounded-2xl sm:rounded-none sm:rounded-l-2xl  mt-5 sm:mt-0 shadow-lg sm:flex-1/3"
+      ></div>
+    </div>
     </div>
     <!-- page-3 -->
     <div class="bg-gray-50 h-auto pb-15 pt-10">
@@ -432,7 +493,7 @@
               <div class="overflow-hidden flex">
                 <table class="table rounded-2xl -collapse text-sm h-fit flex-1">
                   <thead>
-                    <tr class="bg-gray-100  text-gray-500">
+                    <tr class="bg-gray-100 text-gray-500">
                       <td
                         class="p-1 lg:p-2 xl:p-3 2xl:px-3 2xl:py-3.5 bg-white"
                       ></td>
@@ -480,7 +541,7 @@
                   </thead>
                   <tbody>
                     <!-- Turnover -->
-                    <tr class="bg-white ">
+                    <tr class="bg-white">
                       <td
                         class="p-1 lg:p-2 xl:p-3 2xl:px-3 2xl:py-3.5 border-gray-400/50 border-t"
                       >
@@ -1152,7 +1213,7 @@
       </div>
     </div>
     <!-- page-6 -->
-    <div class="h-auto pb-15 text-white xl:px-66 bg-slate-900">
+    <div class="h-auto pb-15 text-white xl:px-26 bg-slate-900">
       <!-- hero section -->
       <div class="flex flex-col gap-4 py-13 text-center">
         <p class="text-4xl">Simple pricing, for everyone.</p>
