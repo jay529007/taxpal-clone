@@ -58,6 +58,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --tracking-tight: -0.025em;
     --leading-tight: 1.25;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
@@ -2213,6 +2214,14 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .\!leading-tight {
+    --tw-leading: var(--leading-tight) !important;
+    line-height: var(--leading-tight) !important;
+  }
+  .leading-4 {
+    --tw-leading: calc(var(--spacing) * 4);
+    line-height: calc(var(--spacing) * 4);
+  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
@@ -2248,6 +2257,10 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
   }
   .text-balance {
     text-wrap: balance;
@@ -3623,6 +3636,11 @@
       margin-left: 13vw;
     }
   }
+  .\32 xl\:h-\[0dvh\] {
+    @media (width >= 96rem) {
+      height: 0dvh;
+    }
+  }
   .\32 xl\:h-\[60dvh\] {
     @media (width >= 96rem) {
       height: 60dvh;
@@ -3663,6 +3681,11 @@
       max-height: 50dvh;
     }
   }
+  .\32 xl\:max-h-\[70dvh\] {
+    @media (width >= 96rem) {
+      max-height: 70dvh;
+    }
+  }
   .\32 xl\:w-\[\%\] {
     @media (width >= 96rem) {
       width: %;
@@ -3691,6 +3714,11 @@
   .\32 xl\:w-\[50dvw\] {
     @media (width >= 96rem) {
       width: 50dvw;
+    }
+  }
+  .\32 xl\:w-\[70dvw\] {
+    @media (width >= 96rem) {
+      width: 70dvw;
     }
   }
   .\32 xl\:gap-5 {
@@ -3837,6 +3865,10 @@
   inherits: false;
 }
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
 }
