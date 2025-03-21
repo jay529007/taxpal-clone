@@ -3648,6 +3648,16 @@
       height: 110vh;
     }
   }
+  .\32 xl\:max-h-\[30dvh\] {
+    @media (width >= 96rem) {
+      max-height: 30dvh;
+    }
+  }
+  .\32 xl\:max-h-\[40dvh\] {
+    @media (width >= 96rem) {
+      max-height: 40dvh;
+    }
+  }
   .\32 xl\:max-h-\[50dvh\] {
     @media (width >= 96rem) {
       max-height: 50dvh;
@@ -3676,6 +3686,11 @@
   .\32 xl\:w-\[35\%\] {
     @media (width >= 96rem) {
       width: 35%;
+    }
+  }
+  .\32 xl\:w-\[50dvw\] {
+    @media (width >= 96rem) {
+      width: 50dvw;
     }
   }
   .\32 xl\:gap-5 {
