@@ -3648,6 +3648,11 @@
       height: 110vh;
     }
   }
+  .\32 xl\:max-h-\[50dvh\] {
+    @media (width >= 96rem) {
+      max-height: 50dvh;
+    }
+  }
   .\32 xl\:w-\[\%\] {
     @media (width >= 96rem) {
       width: %;
