@@ -3,16 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>experiment</title>
+    <title> </title>
     <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="test6.css" />
   </head>
-  <body class="m-[2%]">
-    <!-- hero -->
-    <div class="text-center p-5 mb-[1%] border">1</div>
-    <!-- main -->
-    <div class="flex flex-col sm:flex-row ml-0  lg:ml-[10%] xl:ml-[20%] h-screen sm:h-[80dvh]">
-      <div class="flex-1 border py-0 sm:my-[5%] bg-blue-400">1</div>
-      <div class="flex-1 sm:flex-1/3 border">2</div>
+  <body class="m-[2%] flex justify-center group">
+    <div class="bg-slate-600 p-[2%] w-[70%] gap-10 flex h-[50dvh]">
+      <!-- 1 -->
+      <div class="group-parent flex-1 bg-transparent hover:bg-blue-300 p-1">
+        <button class="child-btn p-10">1</button>
+      </div>
+      <!-- 2 -->
+      <div
+        class="flex-1 group-parent group-hover:bg-transparent bg-blue-300 hover:bg-blue-300 p-1"
+      >
+        <button class="bg-white child-btn hover:bg-white group-hover:bg-transparent p-10">
+          2
+        </button>
+      </div>
+      <!-- 3 -->
+      <div class="flex-1 bg-transparent hover:bg-blue-300 p-1">
+        <button class="bg-transparent hover:bg-white p-10">3</button>
+      </div>
     </div>
   </body>
 </html>

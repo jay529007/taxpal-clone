@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TaxPal</title>
     <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="main.css">
   </head>
   <body class="">
     <!-- navbar-p -->
@@ -151,10 +152,10 @@
 
         <!-- logs -->
         <div
-          class="flex flex-wrap mt-2 justify-center sm:justify-start space-x-5 sm:space-x-8"
+          class="flex mt-2 justify-center items-center h-fit space-x-5 sm:space-x-6"
         >
           <!-- transistor -->
-          <div class="flex items-center gap-2">
+          <div class="flex items-center h-fit gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -170,14 +171,14 @@
                 d="M512 96a32 32 0 0 1 32 32v192a32 32 0 0 1-64 0V128a32 32 0 0 1 32-32m0 576a32 32 0 0 1 32 32v192a32 32 0 1 1-64 0V704a32 32 0 0 1 32-32M96 512a32 32 0 0 1 32-32h192a32 32 0 0 1 0 64H128a32 32 0 0 1-32-32m576 0a32 32 0 0 1 32-32h192a32 32 0 1 1 0 64H704a32 32 0 0 1-32-32"
               />
             </svg>
-            <p class="">Transistor</p>
+            <p class="font-[500] text-gray-700">Transistor</p>
           </div>
           <!-- tuple -->
-          <div class="flex items-center gap-1">
+          <div class="flex items-center h-fit gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="65"
-              height="65"
+              height="28"
               viewBox="0 0 512 191"
             >
               <path
@@ -193,33 +194,16 @@
             </svg>
           </div>
           <!-- statickit -->
-          <div class="flex items-center">
-            <svg
-              version="1.0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="45"
-              height="45"
-              viewBox="0 0 200.000000 200.000000"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <g
-                transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
-                fill="#000000"
-                stroke="none"
-              >
-                <path
-                  d="M889 1265 c-156 -167 -284 -310 -284 -316 0 -6 28 -36 61 -65 l62 -54 254 272 c140 150 269 290 288 311 l33 38 -59 60 c-32 32 -61 59 -65 59 -4 0 -135 -137 -290 -305z m324 220 c15 -13 27 -30 27 -37 0 -7 -22 -36 -48 -63 -26 -28 -137 -147 -247 -265 -109 -118 -205 -219 -213 -224 -9 -5 -23 1 -43 20 -16 15 -29 31 -29 35 0 10 70 87 305 340 94 101 177 191 185 200 20 23 30 22 63 -6z"
-                />
-                <path
-                  fill="black"
-                  d="M978 850 l-287 -309 68 -60 67 -60 225 241 c123 133 253 272 288 310 l64 69 -59 60 c-32 32 -63 59 -69 58 -5 0 -139 -139 -297 -309z m335 225 c15 -14 27 -30 27 -36 0 -6 -33 -45 -72 -87 -99 -105 -323 -345 -382 -409 -27 -29 -56 -53 -66 -53 -22 0 -64 45 -58 62 3 7 102 116 219 242 118 126 229 246 248 267 19 22 39 39 45 39 6 0 24 -11 39 -25z"
-                />
-              </g>
-            </svg>
-            <p class="">statickit</p>
+          <div class="flex items-center gap-0 h-fit">
+            <img
+              class="object-cover w-8"
+              src="Assets/Icons/statickit.svg"
+              alt=""
+            />
+            <p class="font-[700] text-gray-700">Statickit</p>
           </div>
           <!-- mirage -->
-          <div class="flex items-center gap-1">
+          <div class="flex h-fit items-center gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -231,10 +215,10 @@
                 d="M18 10a4 4 0 1 0-4-4a4 4 0 0 0 4 4m0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2m-1.15 8.47a1 1 0 0 0-1.7 0l-1 1.63l-3.29-5.6a1 1 0 0 0-1.72 0l-7 12A1 1 0 0 0 3 22h18a1 1 0 0 0 .85-1.53ZM10.45 20H4.74L10 11l2.94 5l-1.25 2Zm2.35 0l1.49-2.37l.71-1.06l1-1.68L19.2 20Z"
               />
             </svg>
-            <p class="">Mirage</p>
+            <p class="font-[500] text-gray-700">Mirage</p>
           </div>
           <!-- laravel -->
-          <div class="flex items-center gap-1">
+          <div class="flex h-fit items-center gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -246,10 +230,10 @@
                 d="M21.7 6.53c.01.02.01.05.01.08v4.29c0 .1-.06.22-.15.27l-3.61 2.08v4.11c0 .11-.05.21-.15.27l-7.52 4.33c-.02.01-.04.04-.06.04H10s0-.03-.04-.04l-7.52-4.33a.32.32 0 0 1-.15-.27V4.5c0-.05 0-.08.01-.1c0-.01.01-.02.01-.03c0-.02.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02L6.2 2.04c.1-.04.22-.04.3 0l3.78 2.17c.01.01.02.01.03.02l.03.03l.03.03c.01.01.02.02.02.03c.01.02.02.03.02.05c0 .01.01.02.01.03c.01.03.01.05.01.1v8l3.14-1.78V6.61c0-.03 0-.06.01-.08l.01-.03s.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02l3.78-2.17c.08-.06.2-.06.3 0l3.76 2.17c.01 0 .02.01.03.02l.03.03l.03.03c.01.01.01.02.02.03c.01.02.01.05.02.05s.01 0 .01.03m-.61 4.19V7.15l-3.14 1.8v3.55zm-3.76 6.46V13.6l-6.9 3.94v3.61zM2.91 5v12.18l6.9 3.97v-3.61l-3.6-2.04H6.2c-.01 0-.02 0-.03-.03c-.01 0-.02-.01-.03-.02l-.03-.03c-.01-.01-.01-.02-.02-.03c-.01-.02-.01-.03-.02-.04c0-.02-.01-.03-.01-.04c-.01-.01-.01-.03-.01-.04V6.82zm3.45-2.32L3.23 4.5l3.13 1.78L9.5 4.5zm3.45 10.2V5L6.67 6.82v7.87zm7.83-8.08L14.5 6.61l3.14 1.8l3.13-1.8zm-.31 4.15l-3.14-1.8v3.57l3.14 1.78zM10.12 17L17 13.06l-3.12-1.8L7 15.23z"
               />
             </svg>
-            <p class="font-semibold">Laravel</p>
+            <p class="font-[700] text-gray-700">Laravel</p>
           </div>
           <!-- statamic -->
-          <div class="flex items-center gap-1">
+          <div class="flex h-fit items-center gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -390,7 +374,9 @@
           <!-- Inventory -->
           <div class="group">
             <div class="flex">
-              <div class="bg-gray-500 group-hover:bg-blue-500 text-white p-2 rounded-lg">
+              <div
+                class="bg-gray-500 group-hover:bg-blue-500 text-white p-2 rounded-lg"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -427,7 +413,9 @@
                 </svg>
               </div>
             </div>
-            <h2 class="text-gray-500 group-hover:text-blue-500 font-bold mt-3">Inventory</h2>
+            <h2 class="text-gray-500 group-hover:text-blue-500 font-bold mt-3">
+              Inventory
+            </h2>
             <p class="font-semibold text-gray-500 mb-4 mt-2">
               Never lose track of what's in stock with accurate inventory
               tracking.
@@ -442,7 +430,9 @@
           <!-- Contacts -->
           <div class="group">
             <div class="flex">
-              <div class="bg-gray-500 group-hover:bg-blue-500 text-white p-2 rounded-lg">
+              <div
+                class="bg-gray-500 group-hover:bg-blue-500 text-white p-2 rounded-lg"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -456,7 +446,9 @@
                 </svg>
               </div>
             </div>
-            <h2 class="text-gray-500 group-hover:text-blue-500 font-bold mt-3">Contacts</h2>
+            <h2 class="text-gray-500 group-hover:text-blue-500 font-bold mt-3">
+              Contacts
+            </h2>
             <p class="font-semibold text-gray-500 mb-4 mt-2">
               Organize all of your contacts, service providers, and invoices in
               one place.
@@ -737,7 +729,7 @@
           <!-- 1 -->
           <div class="flex-1">
             <div
-              class="space-y-3 group bg-transparent group-hover:bg-transparent hover:bg-blue-600 text-white p-[6%] rounded-xl shadow"
+              class="space-y-3 group group-parent bg-transparent group-hover:bg-transparent hover:bg-blue-600 text-white p-[6%] rounded-xl shadow"
             >
               <!-- Price -->
               <div>
@@ -759,7 +751,7 @@
               <!-- Button -->
               <div>
                 <button
-                  class="border border-gray-500 text-white hover:text-black w-full py-2 rounded-3xl font-semibold mb-6 hover:bg-gray-100 transition"
+                  class="border child-btn border-gray-500 text-white hover:text-black w-full py-2 rounded-3xl font-semibold mb-6 hover:bg-gray-100 transition"
                 >
                   Get started
                 </button>
@@ -855,7 +847,7 @@
           <!-- 2 -->
           <div class="flex-1">
             <div
-              class="group bg-blue-600 group-hover:bg-transparent hover:bg-blue-600 text-white p-8 rounded-xl shadow"
+              class="group group-parent bg-blue-600 group-hover:bg-transparent hover:bg-blue-600 text-white p-8 rounded-xl shadow"
             >
               <!-- Price -->
               <h2 class="text-4xl font-medium">$15</h2>
@@ -870,7 +862,7 @@
 
               <!-- Button -->
               <button
-                class="border-0 group-hover:border group-hover:border-gray-500 group-hover:bg-transparent group-hover:text-white bg-white text-black hover:text-black w-full py-2 rounded-3xl font-semibold mb-6 hover:bg-gray-100 transition"
+                class="border-0 child-btn group-hover:border group-hover:border-gray-500 group-hover:bg-transparent group-hover:text-white bg-white text-black hover:text-black w-full py-2 rounded-3xl font-semibold mb-6 hover:bg-gray-100 transition"
               >
                 Get started
               </button>
@@ -995,7 +987,7 @@
           <!-- 3 -->
           <div class="flex-1">
             <div
-              class="group bg-transparent group-hover:bg-transparent hover:bg-blue-600 text-white p-8 rounded-xl shadow"
+              class="group group-parent bg-transparent group-hover:bg-transparent hover:bg-blue-600 text-white p-8 rounded-xl shadow"
             >
               <!-- Price -->
               <h2 class="text-4xl font-medium">$39</h2>
@@ -1010,7 +1002,7 @@
 
               <!-- Button -->
               <button
-                class="border border-gray-500 hover:border-0 text-white hover:text-black w-full py-2 rounded-3xl font-semibold mb-6 hover:bg-gray-100 transition"
+                class="border child-btn border-gray-500 hover:border-0 text-white hover:text-black w-full py-2 rounded-3xl font-semibold mb-6 hover:bg-gray-100 transition"
               >
                 Get started
               </button>

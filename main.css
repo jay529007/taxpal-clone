@@ -1,0 +1,4 @@
+.group-parent:hover .child-btn {
+    color: black;  /* Hover effect on child */
+    background-color: white;  /* Hover effect on child */
+}
